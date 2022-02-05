@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  padding-top: 50px;
+  font-size: 30px;
+  text-align: center;
+  font-family: "Caveat", cursive;
+}
+
+.comments {
+  width: 50%;
+  margin: 0 auto;
+  background: #8080801a;
+  border-radius: 1%;
+  margin-top: 80px;
+}
+.comments-user {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid black; */
+  border-bottom: 1px solid gray;
+}
+
+.comments-user:first-child {
+  border-top: 1px solid gray;
+}
+
+.user-comment {
+  width: 70%;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  word-break: break-all;
+}
+
+.wrapper {
+  margin: 50px 0;
+}
+
+.userName {
+  font-size: 18px;
+  margin-top: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.comments-text {
+  /* padding-left: 15px; */
+  /* margin-bottom: 20px; */
+  padding: 15px 0;
+  font-family: "Caveat", cursive;
+  font-size: 22px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.userImg {
+  background: black;
+  width: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  /* margin-right: 15px; */
+}
+
+.set-comments {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.set-comments button:hover {
+  background: #2e6ee0;
+  color: white;
+}
+
+.set-comments button {
+  position: absolute;
+  font-size: 18px;
+  letter-spacing: 2px;
+  right: 0;
+  /* bottom: -30px; */
+  border: none;
+  background: none;
+  background: cornflowerblue;
+  width: 150px;
+  padding: 10px 25px;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+.set-comments textarea {
+  margin: 15px 0;
+  resize: none;
+  height: 300px;
+  padding: 15px;
+  background: #8080802e;
+  border: none;
+  border-radius: 1%;
+  font-family: "Caveat", cursive;
+  font-size: 22px;
+}
+
+.set-comments textarea:focus-visible {
+  outline: none;
+}
+
+.set-comments input {
+  margin: 50px 0 15px 0;
+  background: #8080802e;
+  border: none;
+  height: 50px;
+  padding: 15px;
+  font-size: 18px;
+  border-radius: 1%;
+}
+
+.set-comments input:focus-visible {
+  outline: none;
+}
+
+.good {
+  color: red;
+  font-family: "Caveat", cursive;
+  font-size: 22px;
+  text-align: center;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.pagination {
+  margin-bottom: 25px;
+}
+
+.pagination button {
+  border: none;
+  background-color: black;
+  color: wheat;
+  border-radius: 50%;
+  width: 52px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+}
+
+@media (max-width: 767.3px) {
+  .comments {
+    width: 90%;
+  }
+
+  .userImg {
+    width: 25px;
+  }
+  .comments-text {
+    font-size: 18px;
+    padding: 8px;
+  }
+  .userName {
+    padding-left: 8px;
+    font-size: 12px;
+  }
+  .date {
+    font-size: 12px;
+  }
+  .pagination button {
+    width: 32px;
+    height: 32px;
+  }
+  .pagination {
+    padding: 0 15px;
+  }
+  .set-comments input {
+    margin: 20px 0 15px 0;
+  }
+  .set-comments {
+    width: 90%;
+  }
+  .set-comments input {
+    height: 35px;
+    font-size: 15px;
+  }
+  .set-comments textarea {
+    margin-top: 0;
+  }
+  .header {
+    padding-top: 10px;
+  }
+  .set-comments button {
+    font-size: 12px;
+    width: 80px;
+    padding: 6px 6px;
+    bottom: -32px;
+  }
+  .comments {
+    margin-top: 0px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .set-comments,
+  .comments {
+    width: 60%;
+  }
+  .userImg {
+    width: 40px;
+  }
+  .user-comment {
+    padding-left: 4px;
+    padding-right: 6px;
+  }
+  .pagination button {
+    width: 35px;
+    height: 35px;
+  }
+  .set-comments button {
+    width: 100px;
+    padding: 10px 0;
+  }
+  .date {
+    width: 110px;
+    font-size: 12px;
+  }
+  .userName {
+    font-size: 16px;
+  }
+}
